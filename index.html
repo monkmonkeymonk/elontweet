@@ -615,6 +615,10 @@
 
   <style>
 
+* {
+  box-sizing: border-box;
+}
+
 div.image {
    content:url(./img/elon.svg);
    width:700px; 
@@ -625,7 +629,22 @@ div.image {
    display: flex; 
    justify-content: center; 
    align-items: center; 
+   transition: transform .2s;
     }​
+
+    .image {
+  padding: 50px;
+  transition: transform .2s;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+    .image:hover {
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1); 
+}
 
     .tweet-empty-img-reply {
       width: 1px;
