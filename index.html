@@ -2,19 +2,43 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <html lang="en">
 <head>
+    <link rel="icon" href="https://i.imgur.com/WHV5LdO.png">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
             integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
 </head>
 <body>
 
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 <div id="section-1">
 
-    <div style="transition: cubic-bezier(0.455,  0.030, 0.515, 0.955) 500ms;" id="section-1-container">
+    <div style="transition: cubic-bezier(0.455,  0.030, 0.515, 0.955) 500ms;max-width:900px" id="section-1-container">
+
+
+        <div class="elon-tweet-container">
+            <div style="" class="tweet-item">
+                <a class="twitter-timeline"
+                   href="https://twitter.com/elonmusk
+"
+                   data-theme="light"
+                   data-link-color="#2393aa"
+                   data-chrome="noheader nofooter noborders noscrollbar transparent"
+                   data-tweet-limit="1"
+                   aria-polite="polite"></a>
+            </div>
+
+        </div>
+
         <div  style="transition: cubic-bezier(0.455,  0.030, 0.515, 0.955) 500ms;"id="title-container">
             <div style="transition: cubic-bezier(0.455,  0.030, 0.515, 0.955) 500ms;" class="header">
-                <div class="logo" style="transition: cubic-bezier(0.455,  0.030, 0.515, 0.955) 500ms;"><img id="image" style=""
-                                                src="https://green-sun-8933.on.fleek.co/img/elon.svg"></div>
+                <div class="logo" style="transition: cubic-bezier(0.455,  0.030, 0.515, 0.955) 500ms;"><img id="image" style=""  src="https://green-sun-8933.on.fleek.co/img/elon.svg"></div>
+            </div>
+            <div class="topbar-container" style="margin-top:-60px!important;font-weight:bold;margin-bottom:60px!important;display:flex;margin:auto;   justify-content: space-evenly;padding:10px; width:max-content">
+                <div>
+
+                </div>
+                <div style="display:none!important;border-radius:5000px;background:white; display:inline-flex;padding:5px;margin-left:5px;">Contract</div>
             </div>
 
             <h1 style="transition: cubic-bezier(0.455,  0.030, 0.515, 0.955) 500ms;">
@@ -23,15 +47,18 @@
                 </a>
             </h1>
 
-            </div>
         </div>
+
+
     </div>
+</div>
 </div>
 <div id="section-2">
     <div id="section-2-extra">
         <div id="section-2-container">
 
-            <div class="twitter-card">
+
+  <div class="twitter-card">
                 <div class="twitter-card-container">
                     <div class="retweeted">
                         <div class="retweet-text">Pinned tweet</div>
@@ -417,7 +444,7 @@
                     <div class="twitter-user">
                         <div class="twitter-avatar">
                             <img class="twitter-avatar-img"
-                                 src="https://i.kym-cdn.com/entries/icons/facebook/000/018/166/pakalu.jpg">
+                                 src="https://i.imgur.com/N9JjSfx.jpg">
                         </div>
                         <div class="twitter-handle-container">
                             <div class="twitter-name">Tim</div>
@@ -517,6 +544,55 @@
                     <div class="twitter-user">
                         <div class="twitter-avatar">
                             <img class="twitter-avatar-img"
+                                 src="https://i.imgur.com/Vuf0hB9.png">
+                        </div>
+                        <div class="twitter-handle-container">
+                            <div class="twitter-name">elon muks</div>
+                            <div class="twitter-handle">@elonmuks14</div>
+                        </div>
+                    </div>
+
+                    <div class="tweet-content">
+                        <div class="tweet-empty-box">
+                            <img class="tweet-empty-img" src="">
+                        </div>
+                        <div style="display:inline-flex" class="tweet-text-box">
+                            *funny electric car man makes obscure reference*
+                        </div>
+                    </div>
+
+
+                    <div class="tweet-media-container">
+                        <div class="tweet-empty-box">
+                            <img class="tweet-empty-img" src="">
+                        </div>
+
+                        <div id="muks-shill-img" class="tweet-media"></div>
+                    </div>
+                    <div class="tweet-interactions">
+                        <div class="tweet-empty-box">
+                            <img class="tweet-empty-img" src="">
+                        </div>
+                        <div class="tweet-interactions-container">
+                            <div class="comment"></div>
+                            <div class="retweet"></div>
+                            <div class="heart-container">
+                                <div class="heart"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="twitter-card">
+                <div class="twitter-card-container">
+                    <div class="retweeted">
+                        <div class="retweet-text">ELONTWEET retweeted</div>
+                    </div>
+                    <div class="twitter-user">
+                        <div class="twitter-avatar">
+                            <img class="twitter-avatar-img"
                                  src="https://pbs.twimg.com/profile_images/1375239812089851906/KGihJxvu_400x400.jpg">
                         </div>
                         <div class="twitter-handle-container">
@@ -581,18 +657,29 @@
                         <div class="tweet-empty-box">
                             <img class="tweet-empty-img" src="">
                         </div>
-                        <div style="display:inline-flex" class="tweet-text-box">
-                            Join our telegram chat: <span
-                                style="background:none; color:#1DA1F2; margin-left:5px; margin-right:5px; line-height:18px;">https://t.me/elontweet</span>
+                        <div style="" class="tweet-text-box">
+                            Join our telegram chat: <a onclick="window.open('https://t.me/elontweet','_blank')"
+                                style="background:none; color:#1DA1F2; margin-left:5px; margin-right:5px; line-height:18px;">https://t.me/elontweet</a>
+                            <br>
+                            Buy on PancakeSwap: <a onclick="window.open('https://t.me/elontweet','_blank')"
+                                                       style="background:none; color:#1DA1F2; margin-left:5px; margin-right:5px; line-height:18px;">https://pancakeswap.finance/</a>
+                            <br>
+                            Charts on Poocoin: <a onclick="window.open('https://t.me/elontweet','_blank')"
+                                                       style="background:none; color:#1DA1F2; margin-left:5px; margin-right:5px; line-height:18px;">https://poocoin.app/tokens/</a>
+                            </br>
                         </div>
                     </div>
+
+                    <div class="column-tweet-container">
+
+                    <div class="column-tweet">
 
                     <div onclick="window.open('https://t.me/elontweet','_blank')" class="tweet-media-container">
                         <div class="tweet-empty-box">
                             <img class="tweet-empty-img" src="">
                         </div>
 
-                        <div style="border: 1px solid #c1c1c1;border-bottom:none;" id="telegram-shill-img"
+                        <div style="border: 1px solid #c1c1c1;border-bottom:none;height:50px;" id="telegram-shill-img"
                              class="tweet-media"></div>
                     </div>
 
@@ -602,12 +689,64 @@
                         </div>
                         <div class="tweet-emdia-links-container">
                             <div>telegram.org</div>
-                            <div style="color:#AAB8C2"> Join ELONTWEET telegram chat</div>
+                            <div style="color:#AAB8C2">Join ELONTWEET.ME tg</div>
                         </div>
 
 
                     </div>
 
+                    </div>
+
+
+                    <div class="column-tweet">
+
+                    <div onclick="window.open('http://google.com','_blank')" class="tweet-media-container">
+                        <div  style="" class="tweet-empty-box">
+                            <img class="tweet-empty-img" src="">
+                        </div>
+
+                        <div style="border: 1px solid #c1c1c1;border-bottom:none;height:150px;" id="pancakeswap-shill-img"
+                             class="tweet-media"></div>
+                    </div>
+
+                    <div onclick="window.open('http://google.com','_blank')" class="tweet-media-links">
+
+                        <div style=""  class="tweet-empty-box">
+                            <img class="tweet-empty-img" src="">
+                        </div>
+                        <div class="tweet-emdia-links-container">
+                            <div>pancakeswap.finance</div>
+                            <div style="color:#AAB8C2">Buy ELONTWEET.ME</div>
+                        </div>
+
+
+                    </div>
+
+                    </div>
+                    <div class="column-tweet">
+                    <div onclick="window.open('http://google.com','_blank')" class="tweet-media-container">
+                        <div style="" class="tweet-empty-box">
+                            <img class="tweet-empty-img" src="">
+                        </div>
+
+                        <div style="border: 1px solid #c1c1c1;border-bottom:none;height:50px;" id="poocoin-shill-img"
+                             class="tweet-media"></div>
+                    </div>
+
+                    <div onclick="window.open('http://google.com','_blank')" class="tweet-media-links">
+                        <div style="" class="tweet-empty-box">
+                            <img class="tweet-empty-img" src="">
+                        </div>
+                        <div class="tweet-emdia-links-container">
+                            <div>poocoin.app</div>
+                            <div style="color:#AAB8C2"> ELONTWEET.ME charts</div>
+                        </div>
+
+
+                        </div>
+
+                    </div>
+                    </div>
 
                     <div class="tweet-interactions">
                         <div class="tweet-empty-box">
@@ -713,6 +852,21 @@
         background-color: #936747;
         border-radius: 15px;
     }
+
+    #muks-shill-img {
+        background-image: url(https://i.imgur.com/Rze35dT.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 250px;
+        background-size: contain;
+        padding-left: 50px;
+        background-origin: border-box;
+        padding: 50px;
+        background-color: #fff;
+        border-radius: 15px;
+        border: 1px solid #c1c1c1;
+    }
+
 
     #bog-shill-img {
         background-image: url(https://i.redd.it/oold5ygcwlcy.jpg);
@@ -980,6 +1134,7 @@
     .tweet-text-box {
         font-size: 18px;
         font-family: 'Arimo';
+        text-align:justify;
     }
 
     .tweet-empty-box {
@@ -1063,7 +1218,14 @@
         background-size: 30px;
         background-repeat: no-repeat;
     }
-
+    .elon-tweet-container {
+        background: white;
+        border-radius: 15px!important;
+        width: 55vw;
+        padding: 10px;
+        margin-bottom: -60px!important;
+        margin: auto;
+    }
     @media (pointer: none), (pointer: coarse) {
         #section-2-extra {
             max-width: 100%;
@@ -1093,12 +1255,24 @@
         }
 
     }
-
-
+    .TweetAuthor.js-inViewportScribingTarget {
+        display: none;
+    }
+    img.Avatar {
+        display: none;
+    }
 </style>
 
 
 <script>
+
+    function sleep(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+    }
+
+
+
+
     $(function () {
         var hearted = false;
         $(".heart").on("click", function () {
@@ -1175,5 +1349,6 @@
 
 
 </script>
+
 </body>
 </html>
