@@ -16,19 +16,6 @@
     <div style="transition: cubic-bezier(0.455,  0.030, 0.515, 0.955) 500ms;max-width:900px" id="section-1-container">
 
 
-        <div class="elon-tweet-container">
-            <div style="" class="tweet-item">
-                <a class="twitter-timeline"
-                   href="https://twitter.com/elonmusk
-"
-                   data-theme="light"
-                   data-link-color="#2393aa"
-                   data-chrome="noheader nofooter noborders noscrollbar transparent"
-                   data-tweet-limit="1"
-                   aria-polite="polite"></a>
-            </div>
-
-        </div>
 
         <div  style="transition: cubic-bezier(0.455,  0.030, 0.515, 0.955) 500ms;"id="title-container">
             <div style="transition: cubic-bezier(0.455,  0.030, 0.515, 0.955) 500ms;" class="header">
@@ -46,6 +33,11 @@
                     <span style="width:max-content;margin:auto;transition: cubic-bezier(0.455,  0.030, 0.515, 0.955) 500ms;" class="wrap"></span>
                 </a>
             </h1>
+            <div class="main-buttons-container">
+                <button   onclick="window.open('https://t.me/elontweet','_blank')" id="tg-button" class="quick-button"></button>
+                <button   onclick="window.open('https://bscscan.com/','_blank')" id="bsc-button" class="quick-button"></button>
+                <button   onclick="window.open('https://twitter.com/elontweetcrypto','_blank')" id="twt-button" class="quick-button"></button>
+            </div>
 
         </div>
 
@@ -60,6 +52,54 @@
 
 <style>
 
+    .quick-button:hover {
+        -ms-transform: scale(1.1); /* IE 9 */
+        -webkit-transform: scale(1.1); /* Safari 3-8 */
+        transform: scale(1.1);
+        transition: cubic-bezier(0.455,  0.030, 0.515, 0.955) 500ms;
+    }
+
+    .quick-button {
+        margin:15px;
+        transition: cubic-bezier(0.455,  0.030, 0.515, 0.955) 500ms;
+    }
+
+
+
+    .main-buttons-container {
+        width: max-content;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+
+    #twt-button {
+        height: 50px;
+        border-radius: 500px;
+        width: 50px;
+        background: transparent;
+        background-size: contain;
+        background-image: url(https://cdn.icon-icons.com/icons2/2232/PNG/512/twitter_logo_icon_134613.png);
+        border: none;
+    }
+    #tg-button {
+        height: 50px;
+        border-radius: 500px;
+        width: 50px;
+        background: transparent;
+        background-size: contain;
+        background-image: url(https://cdn.icon-icons.com/icons2/2232/PNG/512/telegram_logo_icon_134592.png);
+        border: none;
+    }
+    #bsc-button {
+        height: 50px;
+        border-radius: 500px;
+        width: 50px;
+        background: transparent;
+        background-size: contain;
+        background-image: url(https://i.imgur.com/WfmaFrc.png);
+        border: none;
+    }
     .logo {
         color: black;
         font-weight: bold;
@@ -305,7 +345,7 @@
         height: 100vh;
         padding-bottom: 40px;
         /*background-image: url(https://www.freevector.com/uploads/vector/preview/28767/Japanese_Wave_Seamless_Pattern.jpg);*/
-        background-image: url(./img/elontweet_web-01.png);
+        background-image: url(https://i.imgur.com/4nOeBRN.png);
         display: flex;
         background-size:cover;
     }
