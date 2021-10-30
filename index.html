@@ -2,30 +2,56 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <html lang="en">
 <head>
+    <link rel="icon" href="https://i.imgur.com/WHV5LdO.png">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
             integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
 </head>
 <body>
 
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 <div id="section-1">
 
-    <div style="transition: cubic-bezier(0.455,  0.030, 0.515, 0.955) 500ms;" id="section-1-container">
+    <div style="transition: cubic-bezier(0.455,  0.030, 0.515, 0.955) 500ms;max-width:900px" id="section-1-container">
+
+
+        <div class="elon-tweet-container">
+            <div style="" class="tweet-item">
+                <a class="twitter-timeline"
+                   href="https://twitter.com/elonmusk
+"
+                   data-theme="light"
+                   data-link-color="#2393aa"
+                   data-chrome="noheader nofooter noborders noscrollbar transparent"
+                   data-tweet-limit="1"
+                   aria-polite="polite"></a>
+            </div>
+
+        </div>
+
         <div  style="transition: cubic-bezier(0.455,  0.030, 0.515, 0.955) 500ms;"id="title-container">
             <div style="transition: cubic-bezier(0.455,  0.030, 0.515, 0.955) 500ms;" class="header">
-                <div class="image" style="transition: cubic-bezier(0.455,  0.030, 0.515, 0.955) 500ms;"><img id="image" style=""
-                                                src="./img/elon.png"></div>
+                <div class="logo" style="transition: cubic-bezier(0.455,  0.030, 0.515, 0.955) 500ms;"><img id="image" style=""  src="https://green-sun-8933.on.fleek.co/img/elon.svg"></div>
+            </div>
+            <div class="topbar-container" style="margin-top:-60px!important;font-weight:bold;margin-bottom:60px!important;display:flex;margin:auto;   justify-content: space-evenly;padding:10px; width:max-content">
+                <div>
+
+                </div>
+                <div style="display:none!important;border-radius:5000px;background:white; display:inline-flex;padding:5px;margin-left:5px;">Contract</div>
             </div>
 
             <h1 style="transition: cubic-bezier(0.455,  0.030, 0.515, 0.955) 500ms;">
-                <a  style="transition: cubic-bezier(0.455,  0.030, 0.515, 0.955) 500ms;" id=s-1-title href="" class="typewrite" data-period="2000" data-type='[ "Hi, Im Elon Tweet.", "I am Creative.", "I am obsessed with Elon...", "...or is Elon obsessed with me?", "I Love to find out what he tweets." ]'>
+                <a  style="transition: cubic-bezier(0.455,  0.030, 0.515, 0.955) 500ms;" id=s-1-title href="" class="typewrite" data-period="2000" data-type='[ "Hi, Im Elon Tweet.", "I am obsessed with Elon...", "...or is Elon obsessed with me?", "Elon is my marketing manager", "#Elontweet" ]'>
                     <span style="width:max-content;margin:auto;transition: cubic-bezier(0.455,  0.030, 0.515, 0.955) 500ms;" class="wrap"></span>
                 </a>
             </h1>
 
-            </div>
         </div>
+
+
     </div>
+</div>
 </div>
 
 <style>
@@ -45,7 +71,7 @@
 
     #image {
         width: 500px;
-        margin-top: 0px!important;
+        margin-top: -140px!important;
         margin: auto;
         padding-top: 0;
         display: flex;
@@ -85,7 +111,7 @@
 
 
     #self-shill-media-img {
-        background-image: url(https://i.imgur.com/fdiFvgj.png);
+        background-image: url(https://i.imgur.com/wP3Ch0p.png);
         background-repeat: no-repeat;
         background-position: center;
         height: 250px;
@@ -110,6 +136,21 @@
         background-color: #936747;
         border-radius: 15px;
     }
+
+    #muks-shill-img {
+        background-image: url(https://i.imgur.com/Rze35dT.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 250px;
+        background-size: contain;
+        padding-left: 50px;
+        background-origin: border-box;
+        padding: 50px;
+        background-color: #fff;
+        border-radius: 15px;
+        border: 1px solid #c1c1c1;
+    }
+
 
     #bog-shill-img {
         background-image: url(https://i.redd.it/oold5ygcwlcy.jpg);
@@ -264,8 +305,7 @@
         height: 100vh;
         padding-bottom: 40px;
         /*background-image: url(https://www.freevector.com/uploads/vector/preview/28767/Japanese_Wave_Seamless_Pattern.jpg);*/
-        background-image: url(https://images.freecreatives.com/wp-content/uploads/2015/12/Dotnoise-Light-Grey-Seamless-Photoshop-Pattern.jpg);
-        background-blend-mode: color-burn;
+        background-image: url(https://i.imgur.com/zutMiHn.jpg);
         display: flex;
     }
 
@@ -275,7 +315,7 @@
         width: max-content;
         display:block;
         margin: auto;
-        font-size: 45px;
+        font-size: 1.2em;
         font-weight: bold!important;
         color: white;
         line-height: 50px;
@@ -340,12 +380,12 @@
 
     .twitter-name {
         font-weight: bold;
-        font-size: 25px;
+        font-size: 22px;
     }
 
     .twitter-handle {
         color: #AAB8C2;
-        foont-size: 25px;
+        font-size: 18px;
     }
 
     .tweet-content {
@@ -377,6 +417,7 @@
     .tweet-text-box {
         font-size: 18px;
         font-family: 'Arimo';
+        text-align:justify;
     }
 
     .tweet-empty-box {
@@ -460,7 +501,17 @@
         background-size: 30px;
         background-repeat: no-repeat;
     }
-
+    .elon-tweet-container {
+        background: white;
+        border-radius: 15px!important;
+        width: 35vw;
+        padding: 10px;
+        margin: auto;
+        margin-bottom: -5vh!important;
+        max-width:500px;
+        max-height:11vh;
+        overflow:hidden;
+    }
     @media (pointer: none), (pointer: coarse) {
         #section-2-extra {
             max-width: 100%;
@@ -468,8 +519,7 @@
 
         #section-2 {
             background: #1DA1F2;
-            background-image: url(https://images.freecreatives.com/wp-content/uploads/2015/12/Dotnoise-Light-Grey-Seamless-Photoshop-Pattern.jpg);
-            background-blend-mode: color-burn;
+            background-image: url(https://i.imgur.com/zutMiHn.jpg);
             border-radius: 0px 0px 200px 200px;
         }
 
@@ -490,12 +540,24 @@
         }
 
     }
-
-
+    .TweetAuthor.js-inViewportScribingTarget {
+        display: none;
+    }
+    img.Avatar {
+        display: none;
+    }
 </style>
 
 
 <script>
+
+    function sleep(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+    }
+
+
+
+
     $(function () {
         var hearted = false;
         $(".heart").on("click", function () {
@@ -572,5 +634,6 @@
 
 
 </script>
+
 </body>
 </html>
