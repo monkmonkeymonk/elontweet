@@ -30,7 +30,7 @@
             </div>
 
             <h1 style="transition: cubic-bezier(0.455,  0.030, 0.515, 0.955) 500ms;">
-                <a  style="transition: cubic-bezier(0.455,  0.030, 0.515, 0.955) 500ms;" id=s-1-title href="" class="typewrite" data-period="2000" data-type='[ "Hi, I am Elon Tweet.", "You do know me", "...or is Elon and me?", "Good profits ser", "Could be an earth currency", "marketing manager?", "elon muks", "#Elontweet" , "contests on our TG sers"]'>
+                <a  style="transition: cubic-bezier(0.455,  0.030, 0.515, 0.955) 500ms;" id=s-1-title href="" class="typewrite" data-period="2000" data-type='[ "Hi, I am Elon Tweet.", "Elon is obsessed with me...", "...or is Elon with me?", "Good profits ser", "Could be the world currency", "marketing manager?", "elon muks", "#Elontweet" , "contests on our TG sers"]'>
                     <span style="width:max-content;margin:auto;transition: cubic-bezier(0.455,  0.030, 0.515, 0.955) 500ms;" class="wrap"></span>
                 </a>
             </h1>
@@ -47,14 +47,92 @@
 
     </div>
 </div>
-</div>
 
+<div style="" id="section-2">
+    <div style="display:none"  id="section-2-extra">
+        <div id="section-2-container">
+            <div style="border-bottom:none;display:none;" id="wallet-checker" class="twitter-card">
+                <div class="twitter-card-container">
+                    <div class="twitter-user">
+                        <div class="twitter-avatar">
+                            <img style="background:#aab8c2" class="twitter-avatar-img"
+                                 src="https://pbs.twimg.com/profile_images/1452746734833176583/6Vl8JRQ0_400x400.jpg">
+                        </div>
+                        <div class="twitter-handle-container">
+                            <div class="twitter-name">ELONTWEET</div>
+                            <div class="twitter-handle">@elontweetcrypto</div>
+                        </div>
+                    </div>
+                    <div class="tweet-reply-container">
+                        <div class="tweet-empty-box">
+                            <img class="tweet-empty-img" src="">
+                        </div>
+                        <div class="tweet-reply-text">Replying to <span style="background:none; margin-left:5px;"
+                                                                        class="tweet-reply-handle"> @elontweetcrypto</span>
+                        </div>
+                    </div>
+                    <div class="tweet-content">
+                        <div class="tweet-empty-box">
+                            <img class="tweet-empty-img" src="">
+                        </div>
+                        <div class="tweet-text-box">
+                            Countdown time!
+                        </div>
+                    </div>
+                    <div style="display:none;" class="tweet-hashtags-container">
+                        <div class="tweet-empty-box">
+                            <img class="tweet-empty-img" src="">
+                        </div>
+                        <div class="tweet-hashtags">#ElonTweeted #BSC #ToTheMoon #Innovation #Wow</div>
+                    </div>
+                    <div class="spacer"></div>
+
+                    <div style="display:none;"  class="tweet-media-container">
+                        <div class="tweet-empty-box">
+                            <img class="tweet-empty-img" src="">
+                        </div>
+
+                        <div id="self-shill-media-img" class="tweet-media"></div>
+                    </div>
+                    <div class="tweet-interactions">
+                        <div class="tweet-empty-box">
+                            <img class="tweet-empty-img" src="">
+                        </div>
+                        <div class="tweet-interactions-container">
+                            <div onclick="window.open('https://twitter.com/elontweetcrypto','_blank')" class="comment"></div>
+                            <div onclick="window.open('https://twitter.com/elontweetcrypto','_blank')" class="retweet"></div>
+                            <div class="heart-container">
+                                <div class="heart"></div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+    </div>
+        <div style="flex-direction: column-reverse;margin:auto;height:max-content;display:flex;height:100vh;align-items: center;justify-content: center;font-weight: bold" >
+        <p id="demo"></p>
+            <div style="font-size:3.5rem;color:#aab8c2 ">Reveal</div>
+        </div>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Arimo&family=Open+Sans:wght@300&display=swap');
 </style>
 
 <style>
 
+
+    #demo {
+        text-align: center;
+        font-size: 60px;
+        margin-top: 0px;
+    }
 
     .quick-button:hover {
         -ms-transform: scale(1.1); /* IE 9 */
@@ -683,6 +761,24 @@
         document.body.appendChild(css);
     };
 
+
+
+    var countDownDate = new Date("Nov 2, 2021 19:00:00").getTime();
+
+    var x = setInterval(function() {
+        var now = new Date().getTime();
+        var distance = countDownDate - now;
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+            + minutes + "m " + seconds + "s ";
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+        }
+    }, 1000);
 
 </script>
 
