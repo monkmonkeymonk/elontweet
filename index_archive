@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
+<head>
+    <title>ELONTWEET</title>
+    <link rel="icon" href="https://i.imgur.com/WHV5LdO.png">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+</head>
+<body>
+
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<div id="section-1">
+
+    <div style="transition: cubic-bezier(0.455,  0.030, 0.515, 0.955) 500ms;max-width:900px" id="section-1-container">
+
+
+
+        <div  style="transition: cubic-bezier(0.455,  0.030, 0.515, 0.955) 500ms;"id="title-container">
+            <div style="transition: cubic-bezier(0.455,  0.030, 0.515, 0.955) 500ms;" class="header">
+                <div class="logo" style="transition: cubic-bezier(0.455,  0.030, 0.515, 0.955) 500ms;"><img id="image" style=""  src="https://green-sun-8933.on.fleek.co/img/elon.svg"></div>
+            </div>
+            <div class="topbar-container" style="margin-top:-60px!important;font-weight:bold;margin-bottom:60px!important;display:flex;margin:auto;   justify-content: space-evenly;padding:10px; width:max-content">
+                <div>
+
+                </div>
+                <div style="display:none!important;border-radius:5000px;background:white; display:inline-flex;padding:5px;margin-left:5px;">Contract</div>
+            </div>
+
+            <h1 style="transition: cubic-bezier(0.455,  0.030, 0.515, 0.955) 500ms;">
+                <a  style="transition: cubic-bezier(0.455,  0.030, 0.515, 0.955) 500ms;" id=s-1-title href="" class="typewrite" data-period="2000" data-type='[ "Hi, I am Elon Tweet.", "Elon is obsessed with me...", "...or is Elon with me?", "Good profits ser", "Could be the world currency", "marketing manager?", "elon muks", "#Elontweet" , "contests on our TG sers"]'>
+                    <span style="width:max-content;margin:auto;transition: cubic-bezier(0.455,  0.030, 0.515, 0.955) 500ms;" class="wrap"></span>
+                </a>
+            </h1>
+            <div class="main-buttons-container">
+                <button   onclick="window.open('https://t.me/elontweet','_blank')" id="tg-button" class="quick-button"></button>
+                <button   onclick="window.open('https://www.pinksale.finance/#/launchpad/0xd43EF71b5F9E9558bCb335660e745B2ede52A905?chain=BSC','_blank')" id="ps-button" class="quick-button"></button>
+                <button   onclick="window.open('https://poocoin.app/tokens/0x4e21d66D7244B21613277502118A2f5B78678342','_blank')" id="pc-button" class="quick-button"></button>
+                <button   onclick="window.open('https://bscscan.com/address/0x4e21d66D7244B21613277502118A2f5B78678342','_blank')" id="bsc-button" class="quick-button"></button>
+                <button   onclick="window.open('https://twitter.com/elontweetcrypto','_blank')" id="twt-button" class="quick-button"></button>
+            </div>
+
+        </div>
+
+
+    </div>
+</div>
+
+<div style="" id="section-2">
+    <div style="display:none"  id="section-2-extra">
+        <div id="section-2-container">
+            <div style="border-bottom:none;display:none;" id="wallet-checker" class="twitter-card">
+                <div class="twitter-card-container">
+                    <div class="twitter-user">
+                        <div class="twitter-avatar">
+                            <img style="background:#aab8c2" class="twitter-avatar-img"
+                                 src="https://pbs.twimg.com/profile_images/1452746734833176583/6Vl8JRQ0_400x400.jpg">
+                        </div>
+                        <div class="twitter-handle-container">
+                            <div class="twitter-name">ELONTWEET</div>
+                            <div class="twitter-handle">@elontweetcrypto</div>
+                        </div>
+                    </div>
+                    <div class="tweet-reply-container">
+                        <div class="tweet-empty-box">
+                            <img class="tweet-empty-img" src="">
+                        </div>
+                        <div class="tweet-reply-text">Replying to <span style="background:none; margin-left:5px;"
+                                                                        class="tweet-reply-handle"> @elontweetcrypto</span>
+                        </div>
+                    </div>
+                    <div class="tweet-content">
+                        <div class="tweet-empty-box">
+                            <img class="tweet-empty-img" src="">
+                        </div>
+                        <div class="tweet-text-box">
+                            Countdown time!
+                        </div>
+                    </div>
+                    <div style="display:none;" class="tweet-hashtags-container">
+                        <div class="tweet-empty-box">
+                            <img class="tweet-empty-img" src="">
+                        </div>
+                        <div class="tweet-hashtags">#ElonTweeted #BSC #ToTheMoon #Innovation #Wow</div>
+                    </div>
+                    <div class="spacer"></div>
+
+                    <div style="display:none;"  class="tweet-media-container">
+                        <div class="tweet-empty-box">
+                            <img class="tweet-empty-img" src="">
+                        </div>
+
+                        <div id="self-shill-media-img" class="tweet-media"></div>
+                    </div>
+                    <div class="tweet-interactions">
+                        <div class="tweet-empty-box">
+                            <img class="tweet-empty-img" src="">
+                        </div>
+                        <div class="tweet-interactions-container">
+                            <div onclick="window.open('https://twitter.com/elontweetcrypto','_blank')" class="comment"></div>
+                            <div onclick="window.open('https://twitter.com/elontweetcrypto','_blank')" class="retweet"></div>
+                            <div class="heart-container">
+                                <div class="heart"></div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+    </div>
+    <div style="flex-direction: column-reverse;margin:auto;height:max-content;display:flex;height:100vh;align-items: center;justify-content: center;font-weight: bold" >
+        <p id="demo"></p>
+        <div style="font-size:3.5rem;color:#aab8c2 ">Reveal</div>
+    </div>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Arimo&family=Open+Sans:wght@300&display=swap');
+    </style>
+
+    <style>
+
+
+        #demo {
+            text-align: center;
+            font-size: 60px;
+            margin-top: 0px;
+        }
+
+        .quick-button:hover {
+            -ms-transform: scale(1.1); /* IE 9 */
+            -webkit-transform: scale(1.1); /* Safari 3-8 */
+            transform: scale(1.1);
+            transition: cubic-bezier(0.455,  0.030, 0.515, 0.955) 500ms;
+        }
+
+        .quick-button {
+            margin:15px;
+            transition: cubic-bezier(0.455,  0.030, 0.515, 0.955) 500ms;
+        }
+
+
+
+        .main-buttons-container {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: auto;
+        }
+
+        #twt-button {
+            height: 50px;
+            border-radius: 500px;
+            width: 50px;
+            background: transparent;
+            background-size: contain;
+            background-image: url(https://elontweet.me/img/twt.png);
+            border: none;
+        }
+
+        #pc-button {
+            height: 50px;
+            border-radius: 500px;
+            width: 50px;
+            background: transparent;
+            background-size: contain;
+            background-image: url(https://elontweet.me/img/pc.png);
+            border: none;
+        }
+
+        #ps-button {
+            height: 50px;
+            border-radius: 500px;
+            width: 50px;
+            background: transparent;
+            background-size: contain;
+            background-image: url(https://elontweet.me/img/PS.png);
+            border: none;
+        }
+
+        #tg-button {
+            height: 50px;
+            border-radius: 500px;
+            width: 50px;
+            background: transparent;
+            background-size: contain;
+            background-image: url(https://elontweet.me/img/tg.png);
+            border: none;
+        }
+
+        #bsc-button {
+            height: 50px;
+            border-radius: 500px;
+            width: 50px;
+            background: transparent;
+            background-size: contain;
+            background-image: url(https://elontweet.me/img/bscsna.png);
+            border: none;
+        }
+        .logo {
+            color: black;
+            font-weight: bold;
+            margin: auto;
+            width: max-content;
+            border-radius: 50px;
+            padding: 5px;
+        }
+
+        #image {
+            width: 500px;
+            margin-top: -140px!important;
+            margin: auto;
+            padding-top: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: cubic-bezier(0.455,  0.030, 0.515, 0.955) 500ms;
+        }
+
+        #image:hover {
+            -ms-transform: scale(1.1); /* IE 9 */
+            -webkit-transform: scale(1.1); /* Safari 3-8 */
+            transform: scale(1.1);
+        }
+
+        .tweet-empty-img-reply {
+            width: 1px;
+            background: #AAB8C2;
+            border: 1px solid #AAB8C2;
+            height: 100%;
+            margin-left: 29px;
+            margin-right: 27px;
+        }
+
+        #pinksale-shill-img {
+            background-image: url(https://www.elontweet.me/img/pinksale.jpeg);
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 250px;
+            background-size: contain;
+            padding-left: 50px;
+            background-origin: border-box;
+            padding: 20px;
+            background-color: #fdf7f9;
+            border-radius: 15px 15px 0px 0px;
+            border: 1px solid #cdcdcd;
+        }
+
+
+        #self-shill-media-img {
+            background-image: url(https://elontweet.me/img/WP.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 250px;
+            background-size: contain;
+            padding-left: 50px;
+            background-origin: border-box;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 15px;
+            border: 1px solid #cdcdcd;
+        }
+
+        #elon-shill-img {
+            background-image: url(https://elontweet.me/img/weed.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 250px;
+            background-size: 730px;
+            padding-left: 50px;
+            background-origin: border-box;
+            padding: 50px;
+            background-color: #936747;
+            border-radius: 15px;
+        }
+
+        #muks-shill-img {
+            background-image: url(https://elontweet.me/img/musk2.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 250px;
+            background-size: contain;
+            padding-left: 50px;
+            background-origin: border-box;
+            padding: 50px;
+            background-color: #fff;
+            border-radius: 15px;
+            border: 1px solid #c1c1c1;
+        }
+
+
+        #bog-shill-img {
+            background-image: url(https://elontweet.me/img/BOG.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 250px;
+            background-size: 730px;
+            padding-left: 50px;
+            background-origin: border-box;
+            padding: 50px;
+            background-color: #936747;
+            border-radius: 15px;
+        }
+
+        #poocoin-shill-img {
+            background-image: url(https://elontweet.me/img/poocoin.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 250px;
+            max-height: 150px;
+            background-size: contain;
+            padding-left: 50px;
+            background-origin: content-box;
+            padding: 50px;
+            background-color: #936747;
+            border-radius: 15px 15px 0px 0px;
+
+        }
+
+        #telegram-shill-img {
+            background-image: url(https://elontweet.me/img/telegram.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 250px;
+            max-height: 150px;
+            background-size: contain;
+            padding-left: 50px;
+            background-origin: content-box;
+            padding: 50px;
+            background-color: #1B92D1;
+            border-radius: 15px 15px 0px 0px;
+
+        }
+
+        #pancakeswap-shill-img {
+            background-image: url(https://elontweet.me/img/pancake.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 250px;
+            background-size: contain;
+            padding-left: 50px;
+            background-origin: content-box;
+            padding-right: 50px;
+            background-color: #4fd8dd;
+            border-radius: 15px 15px 0px 0px;
+
+        }
+
+        .tweet-media-links {
+            display: flex;
+        }
+
+        .tweet-emdia-links-container {
+            width: 100%;
+            border: 1px solid #c1c1c1;
+            border-top: none;
+            border-radius: 0px 0px 15px 15px;
+            padding: 10px;
+        }
+
+
+        .header {
+            padding-top: 5px;
+        }
+
+        .retweet-text {
+            color: #AAB8C2;
+            font-weight: bold;
+            font-size: 15px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            margin-left: 90px;
+        }
+
+        /*
+        #tweet1:after {
+          background: #AAB8C2;
+          content: "";
+          height: 227px;
+          width: 2px;
+          display: block;
+          position: absolute;
+          margin-top: -200px;
+          margin-left: 30px;
+        }
+        */
+
+        #tweet1 {
+            border-bottom: none !important;
+        }
+
+        .spacer {
+            height: 30px;
+        }
+
+        .spacer2 {
+            height: 60px;
+        }
+
+        .spacer3 {
+            height: 90px;
+        }
+
+        .spacer4 {
+            height: 120px;
+        }
+
+
+        body {
+            /*background: #f5f8fa;*/
+            background: #F5F8FA;
+            margin: 0px;
+
+        }
+
+        * {
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        #section-1-container {
+            height: max-content;
+            max-width: 750px;
+            margin: auto;
+            display: block;
+        }
+
+        #section-1 {
+            background: #1DA1F2;
+            height: 100vh;
+            background-image: url(https://www.elontweet.me/img/elontweet_web-01.png);
+            display: flex;
+            background-size:cover;
+        }
+
+        #s-1-title {
+            max-width: 80vw;
+            text-align: center;
+            padding-bottom: 15px;
+            width: max-content;
+            display:block;
+            margin: auto;
+            font-size: 1.2em;
+            font-weight: bold!important;
+            color: white;
+            line-height: 50px;
+            font-family: 'Arimo'!important;
+            text-decoration: none;
+            transition: cubic-bezier(0.455,  0.030, 0.515, 0.955) 500ms;
+        }
+
+        #s-1-subtitle {
+            width: auto;
+            margin: auto;
+            text-align: left;
+            font-size: 30px;
+            color: white;
+        }
+
+
+        #title-container {
+            margin: auto;
+            padding: 25px;
+            border-radius: 5px;
+            /*text-shadow: rgb(0 0 214) 1px 0px 0px, rgb(0 0 214) 0.540302px 0.841471px 0px, rgb(0 0 214) -0.416147px 0.909297px 0px, rgb(0 0 214) -0.989992px 0.14112px 0px, rgb(0 0 214) -0.653644px -0.756802px 0px, rgb(0 0 214) 0.283662px -0.958924px 0px, rgb(0 0 214) 0.96017px -0.279415px 0px;*/
+        }
+
+        #section-2 {
+            padding-top: 10px;
+        }
+
+        #section-2-extra {
+            min-height: 50px;
+            border-radius: 35px;
+            background: white;
+            max-width: 780px;
+            margin: auto;
+            height: max-content;
+            padding-top: 10px;
+            margin-bottom: 100px;
+        }
+
+        #section-2-container {
+
+        }
+
+        .twitter-card {
+            margin: auto;
+            padding: 15px;
+            padding-left: 30px;
+            padding-right: 30px;
+            border-bottom: 1px solid #AAB8C2;
+            margin-bottom: 25px;
+        }
+
+        .twitter-user {
+            display: flex;
+        }
+
+        .twitter-avatar-img {
+            max-width: 60px;
+            border-radius: 500px;
+            margin-right: 30px;
+        }
+
+        .twitter-name {
+            font-weight: bold;
+            font-size: 22px;
+        }
+
+        .twitter-handle {
+            color: #AAB8C2;
+            font-size: 18px;
+        }
+
+        .tweet-content {
+            margin-top: 15px;
+            display: flex;
+        }
+
+        .tweet-reply-container {
+            display: flex;
+            margin-top: 5px;
+        }
+
+        .tweet-reply {
+            display: flex;
+        }
+
+        .tweet-reply-handle {
+            font-size: 15px;
+            color: #1DA1F2;
+            font-weight: bold;
+        }
+
+        .tweet-reply-text {
+            font-size: 15px;
+            color: #AAB8C2;
+            display: flex;
+        }
+
+        .tweet-text-box {
+            font-size: 18px;
+            font-family: 'Arimo';
+            text-align:justify;
+        }
+
+        .tweet-empty-box {
+            width: 60px;
+            margin-right: 30px;
+        }
+
+        .tweet-empty-img {
+            width: 60px;
+            height: 10px;
+            visibility: hidden !important;
+        }
+
+        .tweet-hashtags-container {
+            display: flex;
+            margin-top: 10px;
+        }
+
+        .tweet-hashtags {
+            color: #1DA1F2;
+            font-size: 18px;
+            font-weight: bold;
+            font-faimly: 'Arimo';
+        }
+
+
+        .tweet-media-container {
+            display: flex;
+            margin-top: 10px;
+
+        }
+
+        .tweet-media {
+            border-radius: 15px;
+            background: #AAB8C2;
+            height: 150px;
+            width: 100%;
+        }
+
+        .tweet-interactions {
+            display: flex;
+            margin-top: 10px;
+        }
+
+        .tweet-interactions-container {
+            display: flex;
+        }
+
+        .heart {
+            margin: -35px;
+            width: 100px;
+            height: 100px;
+            transform: scale(0.65);
+            background: url("https://elontweet.me/img/heart.png") no-repeat;
+            background-position: 0 0;
+            cursor: pointer;
+            transition: background-position 1s steps(28);
+            transition-duration: 0s;
+        }
+
+        .comment {
+            margin-right: 30px;
+            margin-top: 8px;
+            display: block;
+            content: "o";
+            background: url(https://elontweet.me/img/comment.png);
+            height: 30px;
+            width: 30px;
+            background-size: 30px;
+            background-repeat: no-repeat;
+        }
+
+        .retweet {
+            margin-right: 30px;
+            margin-top: 8px;
+            display: block;
+            content: "o";
+            background: url(https://elontweet.me/img/retweet.png);
+            height: 30px;
+            width: 30px;
+            background-size: 30px;
+            background-repeat: no-repeat;
+        }
+        .elon-tweet-container {
+            background: white;
+            border-radius: 15px!important;
+            width: 35vw;
+            padding: 10px;
+            margin: auto;
+            margin-bottom: -5vh!important;
+            max-width:500px;
+            max-height:12vh;
+            overflow:hidden;
+        }
+        @media (pointer: none), (pointer: coarse) {
+
+            .main-buttons-container {
+                width: 85%;
+
+            }
+            #section-2-extra {
+                max-width: 100%;
+            }
+
+            #section-2 {
+                /*background: #4d9165;*/
+                border-radius: 0px 0px 200px 200px;
+            }
+
+            #section-1 {
+                height: 100vh;
+            }
+
+            .twitter-card {
+                margin: auto;
+                padding: 15px;
+                padding-left: 10px;
+                padding-right: 10px;
+                border-bottom: 1px solid #AAB8C2;
+            }
+
+            #image {
+                width: 300px;
+            }
+
+        }
+        .TweetAuthor.js-inViewportScribingTarget {
+            display: none;
+        }
+        img.Avatar {
+            display: none;
+        }
+    </style>
+
+
+    <script>
+
+        function sleep(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms));
+        }
+
+
+
+
+        $(function () {
+            var hearted = false;
+            $(".heart").on("click", function () {
+                if (!hearted) {
+                    $(this).css({
+                        "transition-duration": "1s",
+                        "background-position": "-2800px 0",
+                        "transition": "background-position 1s steps(28)"
+                    });
+                    hearted = true;
+                } else {
+                    $(this).css({"transition-duration": "1s", "background-position": "0px 0", "transition": "none"});
+                    hearted = false;
+                }
+            });
+        });
+
+        var TxtType = function(el, toRotate, period) {
+            this.toRotate = toRotate;
+            this.el = el;
+            this.loopNum = 0;
+            this.period = parseInt(period, 10) || 2000;
+            this.txt = '';
+            this.tick();
+            this.isDeleting = false;
+        };
+
+        TxtType.prototype.tick = function() {
+            var i = this.loopNum % this.toRotate.length;
+            var fullTxt = this.toRotate[i];
+
+            if (this.isDeleting) {
+                this.txt = fullTxt.substring(0, this.txt.length - 1);
+            } else {
+                this.txt = fullTxt.substring(0, this.txt.length + 1);
+            }
+
+            this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+            var that = this;
+            var delta = 200 - Math.random() * 100;
+
+            if (this.isDeleting) { delta /= 2; }
+
+            if (!this.isDeleting && this.txt === fullTxt) {
+                delta = this.period;
+                this.isDeleting = true;
+            } else if (this.isDeleting && this.txt === '') {
+                this.isDeleting = false;
+                this.loopNum++;
+                delta = 500;
+            }
+
+            setTimeout(function() {
+                that.tick();
+            }, delta);
+        };
+
+        window.onload = function() {
+            var elements = document.getElementsByClassName('typewrite');
+            for (var i=0; i<elements.length; i++) {
+                var toRotate = elements[i].getAttribute('data-type');
+                var period = elements[i].getAttribute('data-period');
+                if (toRotate) {
+                    new TxtType(elements[i], JSON.parse(toRotate), period);
+                }
+            }
+            // INJECT CSS
+            var css = document.createElement("style");
+            css.type = "text/css";
+            css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+            document.body.appendChild(css);
+        };
+
+
+
+        //var countDownDate = new Date("Nov 2, 2021 19:00:00").getTime();
+        var countDownDate = new Date(Date.UTC(2021, 10, 2, 20)).getTime();
+
+        var x = setInterval(function() {
+            var now = new Date().getTime();
+            var distance = countDownDate - now;
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            document.getElementById("demo").innerHTML = hours + "h "
+                + minutes + "m " + seconds + "s ";
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+
+    </script>
+
+</body>
+</html>
