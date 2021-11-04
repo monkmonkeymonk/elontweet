@@ -2,6 +2,5 @@
  elons endless tweets
  
  www.elontweet.me
-=======
-![Video](https://streamable.com/13zqdq)
 
+https://elontweet.me/files/video.MP4
