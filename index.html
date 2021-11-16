@@ -5,7 +5,7 @@
   <title>ElonTweet - We pump with every tweet</title>
   <link rel="icon" href="https://i.imgur.com/WHV5LdO.png">
   <meta property="og:image"
-    content="https://elontweet.me/img/elontweet_200.png" />
+        content="https://elontweet.me/img/elontweet_200.png" />
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
           integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <meta charset="UTF-8">
@@ -265,6 +265,8 @@
               <br></br><br></br>
 
               This is the end of endless ‘Elon coin’ rugs, honeypots, scams and dev dumps.
+
+              P.S. Check out our whitepaper under this tweet!
             </div>
 
           </div>
@@ -281,7 +283,14 @@
               <img class="tweet-empty-img" src="">
             </div>
 
-            <div id="self-shill-media-img" class="tweet-media"></div>
+              <div id="wp-cont" class="tweet-media">
+                <div id="self-wp" onclick="window.open('https://elontweet.me/files/ElonTweet%20Whitepaper%201.0.pdf','_blank')" ></div>
+                <div class="tweet-emdia-links-container" onclick="window.open('https://elontweet.me/files/ElonTweet%20Whitepaper%201.0.pdf','_blank')">
+                  <div>elontweet.me</div>
+                  <div style="color:#AAB8C2"> ElonTweet whitepaper 1.0! </div>
+                </div>
+              </div>
+
           </div>
           <div class="tweet-interactions">
             <div class="tweet-empty-box">
@@ -1137,6 +1146,8 @@
     height: 43px;
     border-radius: 500px;
     width: 185px;
+    background-repeat: no-repeat;
+    background-position: center;
     background: transparent;
     background-size: contain;
     background-image: url(https://elontweet.me/img/FT.png);
@@ -1239,6 +1250,28 @@
     padding: 20px;
     background-color: black;
     border-radius: 15px;
+    border: 1px solid #cdcdcd;
+  }
+
+  #wp-cont{
+    height:unset;
+    background:transparent;
+  }
+
+  #wp-cont > div.tweet-emdia-links-container{
+    width:unset;
+  }
+
+  #self-wp {
+    background-image: url(https://elontweet.me/img/WP.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 250px;
+    background-size: contain;
+    padding-left: 50px;
+    background-origin: border-box;
+    background-color: #ffffff;
+    border-radius:  15px 15px 0px 0px;
     border: 1px solid #cdcdcd;
   }
 
@@ -1680,12 +1713,13 @@
 
     #section-2-extra {
       max-width: 100%;
+
     }
 
 
     #section-2 {
-      background: #4d9165;
-      border-radius: 0px 0px 200px 200px;
+      background:linear-gradient(180deg, rgba(77,145,101,1) 0%, rgba(77,145,101,1) 32%, rgba(255,255,255,0) 34%, rgba(255,255,255,0) 95%);
+      border-radius: 0px 0px 15px 25px;
     }
 
     #section-1 {
@@ -1719,8 +1753,6 @@
   function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
   }
-
-
 
 
   $(function () {
@@ -1803,119 +1835,7 @@
     checkWL(test);
   }, 1000);
 
-  function checkWL(wallet){
-    const wlList = ["0xab88bc5497d47f6124e64cb7605a031e396e57f7",
-      "0x00dfbbe3bde6b0bbbc228817e2a1a8329817daa5",
-      "0xdf098b48de8a7024d1b7c0f3f0b22994c3e0efe1",
-      "0x4fa5cf05c793c8d7818f64751e4c842d17e0a655",
-      "0x6e929647b70db97e9326ea4297ec821175158bd5",
-      "0x10e05c24b91f20cf6052a65c58abb5198d3574c0",
-      "0xb03b0f864e7509e4fe2b3008c6fc5b39e4f28bd4",
-      "0x8ce3b15b6f3f32b757f88bdcf69464e5afdc8452",
-      "0x3b41b0ecde0ee36e34fb9b600cdd94c237e53def",
-      "0xc2e7d764d6a2c9e24c8172ab476852c8992a5f5b",
-      "0x626164fbc74a9c13c552f4f8b36ed4a1527ce23b",
-      "0x3e07bf387fd5357df72f336f7ebcd34996d18e0c",
-      "0x76b4404b61d11963576f4c62c57b1b81a9696ebf",
-      "0xfe36aacbcf5677a4a04288764c16acb4220894b9",
-      "0x8128d16b728aee991632dc9b051d056e5d45a814",
-      "0x372aab902bf4882a31b6327be39b7a12ce34b622",
-      "0x8b7399b977c1c71e48346e5ff2a3866dc07cd7ce",
-      "0xbcd9472049052c0c29faae9d7c1574c6774cfb83",
-      "0xa66df2f59c6e37e66a063ee3a82ea63c0d521d14",
-      "0xa8aa41067e1482c216393e099dfc89701f5fba6f",
-      "0x9b58ca0e6bdc256d7c31f8f9315a24e56cca8dc8",
-      "0x7da9809db0053e8e80d87280d46f6715995b08bb",
-      "0x547851ea0f98442b1a2f9eabc6d5b3a688f49d44",
-      "0xeb5098e9b430c9ae3d8923491a9f81fc2c976a74",
-      "0x543ae632b9183317d61e01b4f43e9d93a1e70092",
-      "0x83726acdd57a1c934edae55c6d0445f8b182967a",
-      "0xe4a3c8ea763789a75e2cc102829412da256f576f",
-      "0x732795831c81aa6d9102ef0c10a4e488721f7643",
-      "0x8d483613e70d287e573351bcecef4bac15ce7c00",
-      "0x99ca69148dae2fc9c3196bb95e9571ea188f9b87",
-      "0xb4c128020554a1041cee92e3bf9a16b4073626fd",
-      "0xceb2141acbfce64ad295767cc086dea49bd24d0f",
-      "0xc43fb904a3b38fed6227ae4f50f674c8a085549d",
-      "0x5c1cef0252d680493e3c5c8b9d6d9eb6f59992c4",
-      "0xb5d23932f1a37375055a4b477656e83610060b96",
-      "0x7f4731eed0bd4271d512acffb8d55b1f6b7eea7b",
-      "0x6d76eb00ad52762f02337d764d6b9764b2d6fdde",
-      "0xc3f5c9947ce4e4a965435a2edb989e487237d312",
-      "0x7ec7d36b751192dd5ecb0abdd714e0296a6751e8",
-      "0x1945372c0074fdf6f89d27e4d477b7d9ad6ed9d7",
-      "0x521475890ebb3f95fb87e8b04ff2ac288671a678",
-      "0x2319349683bcf9f98a595fdc0388662d7de46cc0",
-      "0xf25b567e55066265ddd92428eaec4b2228b014fb",
-      "0x3563fd9a390eb7425935cb5774bac91c87caf1d5",
-      "0xaf67964f0c90e723e297e1e977382963dce9a58e",
-      "0x3b0ad80c7aeadc3501c23a7192f3e0bb0ec46fc5",
-      "0xa903736955d9bc8620dee6541193cf0063d3522a",
-      "0x83400ba9fe831b78d7b03a667b9c554229683a05",
-      "0xa8dc7e1dd009d10449a2f29a724018e05461b017",
-      "0x02f1828f21b7ec274dd9e5bc1b83354d5225bef6",
-      "0xe57abc2fa39ca39c33029bf5cafed89171aea133",
-      "0xc1ce6beb60b17da23649a5b8dc01275c76219f76",
-      "0xae780f25648ef6e9e9d7b9bea1e18e25692af664",
-      "0xa50fb3604d027a6192b519ec5307fb36145f6afb",
-      "0xe974edfc88ab3a06a3daee0c2eeb971da9f38d33",
-      "0xe743c74595dc90e0b06fdb17f8ec89ca09feb3b8",
-      "0xeb161a1d484e8687c33acacb76d74b1ef50cf7a8",
-      "0x15f5d9bb45886a3bba8efc705bc7b78d18bedb90",
-      "0xb777c18caa426b9125ed03b6a1a806a4ecaca0ce",
-      "0x634e975e7994670081c7c1749f6e70242a048961",
-      "0xae025553d9e403b5c8a07e6c5ed1f337fc590a53",
-      "0x6080c1d8a16dc3afff4589e99f73fe20bd9fe19e",
-      "0x6969c95accb886def37aac631055e9f64525a08c",
-      "0x9746059620fcc70ec07638db5de25961f269a416",
-      "0xb03d34dad7ae7082e61aff03e8d34caa1b1ced19",
-      "0x8fdbd7960e01aa0ee88b1bd8c3672c13474313b5",
-      "0x2de4d9c7b255fa85bf6cadde5e9516bbad7f8378",
-      "0x75b91324bfdcea1019a9540d19c382e4082a265d",
-      "0xfaa7998b2b9d4f1e9c9b71cf9cd28e099b94499b",
-      "0xb35109511d8454d6f6b50150d7aba950490bd3f5",
-      "0x279e715425760afe977ada513e27efb1a6587f00",
-      "0x7e45d54031d0a4cdd425fb55006b2abe18a2b43c",
-      "0x5a23ed90a1dc2cd0a16792d609f21cd680bf7ad7",
-      "0xda869b1ab7e0d8718ebc364ea97f689c4553203b",
-      "0xbe2226c54220f12a99af884007d046a915908d08",
-      "0x5dc85e5b4a976ccae8f1a07125a526b6076a4869",
-      "0x768b1484e3c5ca572daa4a301a7cbfa705c225f5",
-      "0x3b9c3b257b8f2b1790e952ce05fa9f51688d2a7f",
-      "0xc6728ffef01040c7374a53bfcc7774ccf3f1c735",
-      "0x6fb88e6b93a92d956a719eb9fc17fe07a01b75c3",
-      "0x07058763844c26d338bc750794bd646f7f1baf44",
-      "0x8d0db3394c895d171c1a179134468445d8d95566",
-      "0x51a2c2580b42cfa888e21d66b566e3466cc1dd02",
-      "0xbb1e1ee6fda556f6290a8ed6a243aee59f56c2f8",
-      "0xc1f514401b32cbd32110501434e0a1742b2df0cd",
-      "0x62ebc9d96b687cb7100aa91c2eecd00c163a852f",
-      "0xf60847eff9c4ff80fab96293e0cc5ecc1f909837",
-      "0x71ae176a4794e3c30355429af1a130ba4265146c",
-      "0x8c1aed0dd523197ce5715a035d35da414c1c0557",
-      "0xc8425feb4dd284c7521d2dcb14a1c0a377f7296a",
-      "0xf0ac5d6be4826107b409f72415b67ed4d6b985f8",
-      "0x05933214714791d7486dc5a71e4a655f4003b019",
-      "0x075302877154f63e669ff3207c37bccb606a320c",
-      "0xc9b904323afbf75d756f29aed84d6e84ab146a63",
-      "0x8bd9277249a49c616ce31564853b43a9fc6497b8",
-      "0x1e8b546e78113488f56db2cc65802fe21b5b18ee",
-      "0x6f7ef6525bce7b72e894b7c0f01d2b6fa8cdb963",
-      "0x30cf5d158a276c3d107031bbe10ac91dd546d0c8",
-      "0x62a98d3c9ccaa90ea36674d759943a491bbf8eaf",
-      "0x1cb98d8558fe050c63ba72c37a48cd70533d8b66"];
-    //console.log(wlList.length);
-    if (wlList.includes(wallet.toLowerCase())){
-      document.getElementById("wl-status").innerHTML = "Status: Whitelisted!";
-    } else {
-      if (wallet != ''){
-        document.getElementById("wl-status").innerHTML = "Status: Not whitelisted"
-      } else {
-        document.getElementById("wl-status").innerHTML = "Status: Put wallet to start"
-      }
 
-    }
-  }
 
 
 
